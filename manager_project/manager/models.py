@@ -50,7 +50,7 @@ class Manager(models.Model):
   DEP_IS = 50 #情報システム
 
   #人
-  persoon = models.ForeignKey('Person')
+  persoon = models.ForeignKey('Person', on_delete=models.CASCADE)
   #部署
   department = models.IntegerField()
   #着任時期
@@ -62,12 +62,12 @@ class Manager(models.Model):
 class Worker(models.Model):
 
   #人
-  persoon = models.ForeignKey('Person')
+  persoon = models.ForeignKey('Person', on_delete=models.CASCADE)
   #着任時期
   joined_at = models.DateTimeField()
   #やめた時期
-  quited_at = models.DateTimeField(null=True, blank=True)　
+  quited_at = models.DateTimeField(null=True, blank=True)
   #担当上司
-  manager = models.ForeignKey('Manager')
+  manager = models.ForeignKey('Manager', on_delete=models.CASCADE)
 
 
