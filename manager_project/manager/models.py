@@ -45,7 +45,7 @@ class Manager(models.Model):
   DEP_FIN = 25 #財務
   DEP_AFFAIRS = 30 #総務
   DEP_PLANNING = 35 #企画
-  DEP_BUINESS = 45 #業務
+  DEP_BUSINESS = 45 #業務
   DEP_DISTR = 45 #流通
   DEP_IS = 50 #情報システム
 
