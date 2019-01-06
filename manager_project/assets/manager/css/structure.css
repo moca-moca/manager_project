@@ -1,0 +1,27 @@
+/* --------------------------------------------------------------- */
+/* general */
+/* --------------------------------------------------------------- */
+.full-height {
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.margin-top-20percent {
+  margin-top: 20px;
+}
+
+.no-margin {
+  margin: 0 !imporeant;
+}
+
+/* テスト */
+h1 {
+  color: red; 
+}
+
+h2 {
+  color: blue;
+}
